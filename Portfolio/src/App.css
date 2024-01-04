@@ -1,42 +1,79 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/*======================= GOOGLE FONTS ========================*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap');
+
+/*======================= CSS VARIABLES ========================*/
+:root{
+  /*================== COLORS ================*/
+
+  /*== COLOR MODE HSL (hue, Saturation, lightness) ==*/
+  --first-color:hsl(271,76%,53%); 
+  --title-color:hsl(0,0%,40%);
+  --text-color:hsl(0,0%,50%);
+  --body-color:hsl(0,0%,100%);
+  --container-color:hsl(0,0%,93%);
+  --border-color:hsl(0,0%,87%);
+  --text-white:#fff;
+
+  /*================== FONTS and TYPOGRAPHY ================*/
+  --body-font:'Open Sans', sans-serif;
+  --second-font:'Poppins', sans-serif;
+
+  --big-font-size:56px;
+  --h1-font-size:50px;
+  --h2-font-size:32px;
+  --h3-font-size:24px;
+  --large-font-size:18px;
+  --normal-font-size:16px;
+  --small-font-size:15px;
+  --smaller-font-size:14px;
+  --tiny-font-size:12px;
+
+/*================== FONT WEIGHT ================*/
+--weight-400:400;
+--weight-500:500;
+--weight-600:600;
+--weight-700:700;
+--weight-800:800;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body,
+input,
+textarea{
+  font-family:var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight:var(--weight-500);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+  background-color: var(--body-color);
+  color: var(--text-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3,
+h4{
+  color:var(--title-color);
+  font-family: var(--second-font);
+  font-weight:var(--weight-700);
 }
 
-.card {
-  padding: 2em;
+ul{
+  list-style:none;
 }
 
-.read-the-docs {
-  color: #888;
+a{
+  text-decoration:none;
+}
+
+button,
+input,
+textarea{
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+img{
+  max-width:100%;
 }
